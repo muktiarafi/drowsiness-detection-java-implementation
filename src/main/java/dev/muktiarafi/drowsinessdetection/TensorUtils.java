@@ -1,4 +1,4 @@
-package dev.muktiarafi;
+package dev.muktiarafi.drowsinessdetection;
 
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;

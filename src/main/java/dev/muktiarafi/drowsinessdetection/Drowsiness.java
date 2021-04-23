@@ -1,4 +1,4 @@
-package dev.muktiarafi;
+package dev.muktiarafi.drowsinessdetection;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;

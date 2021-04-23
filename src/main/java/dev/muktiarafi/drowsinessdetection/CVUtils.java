@@ -1,4 +1,4 @@
-package dev.muktiarafi;
+package dev.muktiarafi.drowsinessdetection;
 
 import javafx.scene.image.Image;
 import org.opencv.core.*;

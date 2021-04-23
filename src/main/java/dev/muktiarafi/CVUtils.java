@@ -106,6 +106,10 @@ public class CVUtils {
         return capture.get(Videoio.CAP_PROP_FRAME_HEIGHT);
     }
 
+    public void releaseCapture() {
+        capture.release();
+    }
+
     public VideoCapture getCapture() {
         return capture;
     }

@@ -83,4 +83,8 @@ public class TensorUtils {
 
         return ImageIO.read(in);
     }
+
+    public void closeSession() {
+        session.close();
+    }
 }

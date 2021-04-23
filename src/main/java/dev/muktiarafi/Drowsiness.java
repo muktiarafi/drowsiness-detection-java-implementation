@@ -25,6 +25,14 @@ public class Drowsiness extends Application {
         cvUtils.loadFaceCascade();
         cvUtils.loadEyesCascade();
 
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                cvUtils.releaseCapture();
+                tensorUtils.closeSession();
+            }
+        });
+
         String awakenPath = "./src/main/resources/awaken.mp3";
         AudioPlayerComponent audioPlayerComponent = new AudioPlayerComponent();
         audioPlayerComponent.mediaPlayer().media().startPaused(awakenPath);
